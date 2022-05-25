@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/medicineImg"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/medicineName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/medicineImg"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicineName"
+        android:layout_toRightOf="@+id/medicineImg"
+        android:text="description"
+        android:id="@+id/txtDesc"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAssignClient"
+        android:text="Assign Client"
+        android:layout_below="@+id/medicineImg"
+        android:layout_marginStart="30dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEdit"
+        android:text="edit"
+        android:layout_below="@+id/medicineImg"
+        android:layout_toRightOf="@+id/btnAssignClient"
+        android:layout_marginStart="30dp"/>
+</RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
