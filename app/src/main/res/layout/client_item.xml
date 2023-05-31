@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/clientItem">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        android:id="@+id/imageCard">
+        <ImageView
+            android:id="@+id/clientImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_launcher_round" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txtClientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/imageCard"
+        android:text="Name"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtEarly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtClientName"
+        android:layout_toRightOf="@+id/imageCard"
+        android:text="Early"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtClientName"
+        android:layout_toRightOf="@+id/txtEarly"
+        android:text="Mid-Day"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtClientName"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@+id/txtMid"
+        android:text="Night"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

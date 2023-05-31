@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clientActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:openDrawer="end">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageCard"
+                app:cardCornerRadius="100dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/toolbar">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/imageClientActivity"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/imageCard"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtName"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imageCard"
+                android:text="Description"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/noMedicinesClientActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Medicines Assigned"
+                android:layout_below="@+id/txtDesc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/verificationButtons">
+
+                <Button
+                    android:id="@+id/btnEarlyVerify"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#ebb505"
+                    android:text="Early" />
+
+                <Button
+                    android:id="@+id/btnMidVerify"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btnEarlyVerify"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#eb7405"
+                    android:text="Midday" />
+
+                <Button
+                    android:id="@+id/btnLateVerify"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btnMidVerify"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#a10609"
+                    android:text="Late" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/medicineRecyclerViewClientActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/verificationButtons"
+                android:layout_below="@+id/imageCard"
+                android:layout_centerHorizontal="true" />
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:elevation="4dp" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu_items" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllMedicinesActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:openDrawer="end">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:elevation="4dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/medicinesRecView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar" />
+            <TextView
+                android:id="@+id/noMedicines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Medicines"
+                android:layout_centerInParent="true"
+                android:textSize="35dp"
+                android:visibility="invisible"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addMedicinesBtn"
+                android:layout_below="@+id/noMedicines"
+                android:layout_margin="10dp"
+                android:text="Add A Medicine"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu_items" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

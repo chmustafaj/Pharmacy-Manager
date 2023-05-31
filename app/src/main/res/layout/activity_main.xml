@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelLayout"
+    android:visibility="gone">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:openDrawer="end">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/noClients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Clients"
+                android:layout_centerInParent="true"
+                android:textSize="35dp"
+                android:visibility="invisible"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addClientBtn"
+                android:text="Add Client"
+                android:layout_below="@+id/noClients"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:elevation="4dp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/clientsRecView"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_marginTop="20dp"
+                    />
+
+        </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu_items" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

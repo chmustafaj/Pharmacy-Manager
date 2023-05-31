@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.2045" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/activity_add_client.xml" value="0.264" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/activity_add_medicine.xml" value="0.25625" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/activity_assign_to_client.xml" value="0.16" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/activity_client.xml" value="0.25" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/activity_main.xml" value="0.25625" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/activity_medicine.xml" value="0.264" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/client_item.xml" value="0.2" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/clients_dialog.xml" value="0.264" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/drawer_header.xml" value="0.25625" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/drawer_menu_items.xml" value="0.25625" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/edit_medicine_dialog.xml" value="0.25625" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/layout/medicine_item.xml" value="0.25625" />
+        <entry key="..\:/Programming/AndroidProjects/Pharmacy Manager/app/src/main/res/menu/drawer_menu_items.xml" value="0.25625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
